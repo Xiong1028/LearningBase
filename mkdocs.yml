@@ -2,10 +2,20 @@ site_name: Learning Base
 theme:
   name: material
   custom_dir: custom_theme/
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
 nav:
   - Home: index.md
-  - SharePoint: 
-    - introduction: sharepoint/index.md
+  - Microsoft:
+    - SharePoint: 
+      - introduction: microsoft/sharepoint/index.md
+    - Power Platform:
+      - PowerApps: microsoft/powerplatform/powerapps/index.md
+  - Adobe:
+    - AEM:
+      - Sites: adobe/aem/sites/index.md
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
