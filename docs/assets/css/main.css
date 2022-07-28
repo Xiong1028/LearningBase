@@ -1,0 +1,11 @@
+h1{
+	color:#9A3324 !important;
+	font-weight: bold !important; 
+	font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+em{
+	background-color: darkblue;
+	color: #FFCD00;
+	padding:0 0.5rem;
+}

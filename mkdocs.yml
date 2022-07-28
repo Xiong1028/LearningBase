@@ -1,11 +1,22 @@
 site_name: Learning Base
-theme:
+theme: 
   name: material
   custom_dir: custom_theme/
+  font:
+    code: Roboto Mono
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - toc.integrate 
+extra_javascript:
+ - /assets/js/mermaid.js
+ - /assets/js/aem.js
+extra_css:
+ - /assets/css/main.css
 nav:
   - Home: index.md
   - Microsoft:
@@ -15,7 +26,22 @@ nav:
       - PowerApps: microsoft/powerplatform/powerapps/index.md
   - Adobe:
     - AEM:
-      - Sites: adobe/aem/sites/index.md
+      - Sites:
+        - Introduction: adobe/aem/sites/index.md
+        - Sandbox Setup: adobe/aem/sites/sandbox.md
+        - Folder Structure: adobe/aem/sites/folder-structure.md
+        - Package: adobe/aem/sites/package.md
+        - Page: adobe/aem/sites/page.md
+        - Template: adobe/aem/sites/template.md
+        - Components: adobe/aem/sites/components.md
+        - BEM: adobe/aem/sites/bem.md
+        - URL Decomposition: adobe/aem/sites/aemurl.md
+        - HTL: adobe/aem/sites/htl.md
+        - Client Library: adobe/aem/sites/clientLibrary.md
+      - Assets:
+        - Introduction: adobe/aem/aem-assets/index.md
+      - Forms:
+        - Introduction: adobe/aem/forms/index.md
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
