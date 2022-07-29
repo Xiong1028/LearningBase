@@ -38,6 +38,8 @@ nav:
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
         - Client Library: adobe/aem/sites/clientLibrary.md
+        - Apache Sling:
+          - Adapater: adobe/aem/sites/sling/adapter.md
       - Assets:
         - Introduction: adobe/aem/aem-assets/index.md
       - Forms:
