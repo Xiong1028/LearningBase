@@ -42,7 +42,7 @@ data-sly-repeat
 ...
 ```
 
-### Predefined objects
+### Predefined [global objects](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html?lang=en)
 ```mermaid
 	 flowchart LR
 	 a[APIs] --> b[currentPage] === c([instance of the page class]) ---|currentPage.Title| abc[AEM API] 
