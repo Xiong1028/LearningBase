@@ -46,3 +46,10 @@ a[Step1 - Define a design] --> a1[Step2 - Create client library] --> a2[Step3 - 
 #### how to define a desgin?
 `AEM pannel` >> `Tools` >>`Operations` >> `Configuration` or `locahost:4502/miscadmin` >> `Designs` >> `new page` >>`page will go to /etc/desgins`
 
+### Step2 - [Create client library](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/clientlibs.html?lang=en#creating-client-library-folders)
+```mermaid
+flowchart LR
+a((Front-end development)) --> a1[clientlib-site] & a2[clientlib-all] -->|moveTo| a3[The design folder in step 1. /etc/designs/pageName]
+```
+![Create clientLibrary](/assets/img/aem/clientlibarch.png) <br>
+<sup>* Data from [adobe document](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/clientlibs.html?lang=en#creating-client-library-folders)</sup>

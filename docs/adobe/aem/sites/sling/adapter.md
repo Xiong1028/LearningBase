@@ -2,11 +2,16 @@
 
 ```mermaid  
     flowchart LR
-    a[Resource] -->b[<em>Interface</em>:Adaptable]
-    c[ResourceResolver] -->b --> |adaptTo|a1[javax.jcr.Node<br>org.apache.sling.api.script.SlingScript<br>...] & c1[javax.jcr.Session<br>...]
+    a[Resource] -->|implement| b[<em>Interface</em>:Adaptable]
+    c[ResourceResolver] -->|implement| b --> |adaptTo|a1[javax.jcr.Node<br>org.apache.sling.api.script.SlingScript<br>...] & c1[javax.jcr.Session<br>...]
+```
+<strong>Example</strong>
+```java
+Node node = resource.adaptTo(Node.class);
 ```
 
 ## Interface Adaptable
+> This interface provides a generic adaptTo() method that will translate the object to the class type being passed as the argument.
 
 ```java
 /**
