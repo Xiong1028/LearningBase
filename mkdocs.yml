@@ -1,5 +1,5 @@
 site_name: Learning Base
-theme: 
+theme:
   name: material
   custom_dir: custom_theme/
   font:
@@ -11,7 +11,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - toc.integrate 
+    - toc.integrate
 extra_javascript:
  - /assets/js/mermaid.js
  - /assets/js/aem.js
@@ -20,7 +20,7 @@ extra_css:
 nav:
   - Home: index.md
   - Microsoft:
-    - SharePoint: 
+    - SharePoint:
       - introduction: microsoft/sharepoint/index.md
     - Power Platform:
       - PowerApps: microsoft/powerplatform/powerapps/index.md
@@ -38,6 +38,7 @@ nav:
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
         - Client Library: adobe/aem/sites/clientLibrary.md
+        - Navigation: adobe/aem/sites/navigation.md
         - Apache Sling:
           - Adapater: adobe/aem/sites/sling/adapter.md
       - Assets:
@@ -51,5 +52,3 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 copyright: copyright@ 2022 xiong, All right reserved
-
-

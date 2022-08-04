@@ -13,7 +13,7 @@
 
         <!-- Load all -->
         <sly data-sly-call="${clientlib.all @ categories='myCategory'}"/>
-        
+
     </head>
     <body>
         <!-- Load JS -->
@@ -53,3 +53,17 @@ a((Front-end development)) --> a1[clientlib-site] & a2[clientlib-all] -->|moveTo
 ```
 ![Create clientLibrary](/assets/img/aem/clientlibarch.png) <br>
 <sup>* Data from [adobe document](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/clientlibs.html?lang=en#creating-client-library-folders)</sup>
+
+### Step3 - Calling client library
+```html
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories=['myCategory1', 'myCategory2']}"/>
+```
+
+```mermaid
+flowchart LR
+a[Create two customheaderlibs.html <br>and customfooter.html] --> a1([Call custom clientLibrary])--> a2[Include custom js libs files <br>into original footer.html] --> a3(head.html in parent built-in page component<br> has already included customheaderlibs.html)
+```
+
+### Step4 - Assign a design to a website
+`AEM pannel` >> `Sites` >> `Project` >> `View Properties` >> `Advanced` >> `Design` >> `Select design` >> `Back to page` >> `check the result`
