@@ -1,7 +1,7 @@
 site_name: Learning Base
 theme:
   name: material
-  custom_dir: custom_theme/
+  custom_dir: custom_theme
   font:
     code: Roboto Mono
   palette:
@@ -19,6 +19,14 @@ extra_css:
  - /assets/css/main.css
 nav:
   - Home: index.md
+  - FrontEnd:
+    - introduction:  frontend/index.md
+  - BackEnd:
+    - introduction:  backend/index.md
+  - DataBase:
+    - introduction: database/index.md
+    - GraphQL:
+      - introduction: database/graphql/index.md
   - Microsoft:
     - SharePoint:
       - introduction: microsoft/sharepoint/index.md
@@ -45,6 +53,7 @@ nav:
         - Introduction: adobe/aem/aem-assets/index.md
       - Forms:
         - Introduction: adobe/aem/forms/index.md
+       
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
