@@ -9,3 +9,9 @@ em{
 	color: #FFCD00;
 	padding:0 0.5rem;
 }
+
+.call-out-1{
+	padding: 1em;
+	border: 4px double #000;
+	background-color: lightgray;
+}

@@ -16,6 +16,10 @@
 		d(Edit template) -.- c(Static template)
 	end
 	e-->Template--> Page
+	Components --> Page
+	e --> Page
+	Components --> Template
+	
 ```
 
 ### Adding thumbnail for page
