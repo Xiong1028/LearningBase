@@ -1,7 +1,7 @@
 # Template
 
 > *Blueprint/layout* - Template has the same hierarchy as page but with no content. <br><br>
-> Used to create a `page`.
+> Be used to create a `page`.
 
 
 ## How to create a template?
