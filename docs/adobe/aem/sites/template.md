@@ -13,12 +13,17 @@ g([Page Template]) --resource type--> h{Page Component}
 g --creation done--> i[Template can be choosen to create page] 
 ```
 
+## Template properties
+![template properties](/assets/img/aem/template-properties.png){width=600}
+
 ## Restrict Template
 ```mermaid
 	flowchart LR
-	a[Restrict Tetmpalte] --property--> b[allowedPaths] & c[allowedTemplates]
-	b -.- d([Define in which path the template can be used])
-	c -.- e([Define which templates can be uesed in a specific path])
+	a[Restrict Tetmpalte] --property--> b[allowedPaths] & c[allowedTemplates] & f[allowedParents] & g[allowedChildren]
+	b -.- d([Define in which path the template can be used - Page level property])
+	c -.- e([Define which templates can be uesed in a specific path - Template level property])
+	f -.- f1([It can be only used under allowedParents - Template level property])
+	g -.- g1([Define which template will be available to create child pages - Template level property])
 
 ```
 
@@ -36,8 +41,10 @@ Examples:
 
 
 ### allowedTemplates property
-> Define which templates can be uesed in a specific path
-> 
+> Define which templates can be used in a specific path <br>
+
+<p class="call-out-1">Also as cq:allowedTemplates, all the pages under the node with cq:allowedTemplates will be restricted. </p>
+
 ```mermaid
   flowchart RL
 	 b[template A] & c[template B] & d[template C] & e[template X] --> a[specified path. /content/cbd ] 

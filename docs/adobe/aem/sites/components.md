@@ -29,3 +29,5 @@ All components inherit functionalities e.g. setting box,  from  `sling:resourceS
 
 ```
 
+## Base Page Component
+![page component](/assets/img/aem/page-component.png){width=800}
