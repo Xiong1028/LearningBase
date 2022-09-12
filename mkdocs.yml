@@ -42,6 +42,7 @@ nav:
         - Page: adobe/aem/sites/page.md
         - Template: adobe/aem/sites/template.md
         - Components: adobe/aem/sites/components.md
+        - Model: adobe/aem/sites/model.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
