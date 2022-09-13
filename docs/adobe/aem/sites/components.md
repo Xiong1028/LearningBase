@@ -31,3 +31,6 @@ All components inherit functionalities e.g. setting box,  from  `sling:resourceS
 
 ## Base Page Component
 ![page component](/assets/img/aem/page-component.png){width=800}
+<p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
+
+## multifield Dialog

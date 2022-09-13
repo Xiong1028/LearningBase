@@ -42,7 +42,8 @@ nav:
         - Page: adobe/aem/sites/page.md
         - Template: adobe/aem/sites/template.md
         - Components: adobe/aem/sites/components.md
-        - Model: adobe/aem/sites/model.md
+        - Dialog: adobe/aem/sites/dialog.md
+        - Sling-Model: adobe/aem/sites/sling-model.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
@@ -58,6 +59,9 @@ nav:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
