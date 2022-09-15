@@ -1,7 +1,27 @@
+h1,h2,h3,h4,h5{
+	font-family: Georgia, 'Times New Roman', Times, serif !important;
+	font-weight: bold !important; 
+}
+
+
 h1{
 	color:#9A3324 !important;
-	font-weight: bold !important; 
-	font-family: Georgia, 'Times New Roman', Times, serif !important;
+	font-size: 2rem !important;
+}
+
+h2{
+	color: darkblue !important;
+	font-size: 1.7rem !important;
+}
+
+h3{
+	color: #000 !important;
+	font-size: 1.5rem !important;
+}
+
+h4{
+	color: purple !important;
+	font-size: 1.3rem !important;
 }
 
 em{
@@ -13,5 +33,18 @@ em{
 .call-out-1{
 	padding: 1em;
 	border: 4px double #000;
-	background-color: lightgray;
+	background-color: lightgray
+	font-family: monospace;
 }
+
+
+.call-out-2,
+blockquote{
+	padding: 1em !important;
+	border-left: 4px solid orangered !important;
+	background-color: lightgray !important;
+	color: #000 !important;;
+	font-family: monospace !important;
+}
+
+
