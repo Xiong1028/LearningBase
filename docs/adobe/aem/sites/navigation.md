@@ -20,9 +20,23 @@
 ```
 ## Create a complex component with java helper
 
-> Create a `TopNav.class` with the same folder as `site-topnav.html`
+> Create a `TopNav.java` with the same folder as `site-topnav.html`. other option is creating java class bundle. 
+```bash
+├──apps
+│	├──project name
+│		├──components
+│			├──content
+│              ├──site-topnav
+│                         ├──site-topnav.html
+│                         └──TopNav.java 
+│			└──structure
+│		└──templates 
+|──content
+```
 
 *Note:* in AEM 6.5 before
+
+### Java Helper
 ```java
 package apps.training.components.content.site_topnav;
 
@@ -61,7 +75,6 @@ public class TopNav extends WCMUsePojo{
         return rootPage;
     }
 }
-
 ```
 
 ```html
@@ -97,5 +110,13 @@ public class TopNav extends WCMUsePojo{
     </nav>
     <!-- /.navbar -->
 </div>
+```
+## Creating a navigation using JavaScript Helper
+
+### Javascript Use-API
+```mermaid
+
+a[Javascript Use-API] --> a1[currentNode] & a2[currentPage]
 
 ```
+

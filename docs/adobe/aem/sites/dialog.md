@@ -17,17 +17,17 @@ a[Dialogs] --> |input| a1("component") --> |output| a11["HTL"] --> Page
 
 #### JCR structure
 
-![multifield dialogl](/assets/img/aem/dialog-multifield.png){width=800}
+![multifield dialogl](/assets/img/aem/dialog-multifield.png)
 
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 <p class="call-out-2">
-NOTE: composite property as true is used in a single mulifields and field will be a property in arrays, while false value is used in multi multifields and field will be a sub-node.
+NOTE: composite property as true is used in a single mulifields and field will be a property in arrays, while false value is used in multi multifields and field will be a child node.
 </p>
 
 #### Dialog structure
 
-![dialog structure](/assets/img/aem/dialog-structure.png){ width=800 }
+![dialog structure](/assets/img/aem/dialog-structure.png)
 
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
@@ -38,11 +38,11 @@ When do we use map to handle dialog multi multifields?   <br>
 all fields share the same date type. it returns <em>List&lt;map&lt;String, String &gt;&gt;</em>
 
 </p>
-![dialog structure](/assets/img/aem/dialog-multifield-with-container.png){ width=800 }
+![dialog structure](/assets/img/aem/dialog-multifield-with-container.png)
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 **Dialog multifield structure in CRX**
-![dialog multifield structure](/assets/img/aem/dialog-structure-in-crx.png){ width=800 }
+![dialog multifield structure](/assets/img/aem/dialog-structure-in-crx.png)
 
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 

@@ -6,22 +6,22 @@ h1,h2,h3,h4,h5{
 
 h1{
 	color:#9A3324 !important;
-	font-size: 2rem !important;
+	font-size: 1.8rem !important;
 }
 
 h2{
 	color: darkblue !important;
-	font-size: 1.7rem !important;
+	font-size: 1.6rem !important;
 }
 
 h3{
 	color: #000 !important;
-	font-size: 1.5rem !important;
+	font-size: 1.4rem !important;
 }
 
 h4{
 	color: purple !important;
-	font-size: 1.3rem !important;
+	font-size: 1.2rem !important;
 }
 
 em{
