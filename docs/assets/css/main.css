@@ -47,4 +47,8 @@ blockquote{
 	font-family: monospace !important;
 }
 
-
+p:has(>sup){
+	text-align:right;
+	font-style:italic;
+	font-size: 11px;
+}
