@@ -10,3 +10,8 @@
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 
+### Demo
+*/app/projectName/components/content/author*
+
+![dialog custom validator demo](/assets/img/aem/dialog-validator-demo-1.png)
+<p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>

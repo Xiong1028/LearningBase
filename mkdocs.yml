@@ -43,6 +43,7 @@ nav:
         - Template: adobe/aem/sites/template.md
         - Components: adobe/aem/sites/components.md
         - Dialog: adobe/aem/sites/dialog.md
+        - Dialog Validator: adobe/aem/sites/dialog-validator.md
         - Sling-Model: adobe/aem/sites/sling-model.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
