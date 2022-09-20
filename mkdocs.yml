@@ -45,6 +45,7 @@ nav:
         - Dialog: adobe/aem/sites/dialog.md
         - Dialog Validator: adobe/aem/sites/dialog-validator.md
         - Sling-Model: adobe/aem/sites/sling-model.md
+        - Content Exporter: adobe/aem/sites/content-exporter.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
