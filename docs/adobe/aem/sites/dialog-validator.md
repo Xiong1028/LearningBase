@@ -2,14 +2,24 @@
 
 ## Dialog Custom Validator
 
-- Create a new `clientlib` folder under the component node to hold js and css only for dialog.
+<details>
+<summary>
+ Create a new `clientlib` folder under the component node to hold js and css only for dialog.
+</summary>
 
-![dialog custom validator](/assets/img/aem/dialog-custom-validator-0.png)
+<img src="/assets/img/aem/dialog-custom-validator-0.png" alt="dialog custom validator" />
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
+</details>
 
-- Write a registry validator js file
-![dialog custom validator](/assets/img/aem/dialog-custom-validator-1.png)
+<details>
+<summary>
+Write a registry validator js file
+</summary>
+
+<img src="/assets/img/aem/dialog-custom-validator-1.png"/>
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
+</details>
+
 
 > Add property: validator on dialog node(textfield or multifield)
 
@@ -17,22 +27,36 @@
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 
-- Call new clientlib in dialog
-![dialog custom validator](/assets/img/aem/dialog-custom-validator-0-1.png)
+<details>
+<summary>
+Call new clientlib in dialog
+</summary>
+
+<img src="/assets/img/aem/dialog-custom-validator-0-1.png"/>
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
+</details>
+
 
 ## Demo
 > The validator js and css files are only under editor and set a `extraClientlibs` property in dialog node, like author. by doing this,  The clientlibswill only be loaded in editor dialog.  
 */app/projectName/components/content/author*
 
-#### Add a multifield maximum and minimum items validationvalidation property 
+<details>
+<summary>
+Add a multifield maximum and minimum items validationvalidation property 
+</summary>
 
-![dialog custom validator demo](/assets/img/aem/dialog-validator-demo-1.png)
+<img src="/assets/img/aem/dialog-validator-demo-1.png"/>
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
+</details>
 
 
-#### How to setup multifield maximum and minimum items validation?
-![dialog custom validator demo](/assets/img/aem/dialog-validator-demo-2.png)
+<details>
+<summary>
+How to setup multifield maximum and minimum items validation?
+</summary>
+
+<img src="/assets/img/aem/dialog-validator-demo-2.png"/>
 <p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 ```javascript
@@ -59,3 +83,8 @@
 	});
 })(jQuery, Coral);
 ```
+</details>
+
+
+
+
