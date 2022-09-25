@@ -27,10 +27,9 @@ flowchart LR
 a[Content Exporter Annotations] --> a1("@Exporter") --- a11("Make a sling mode to content exporter service")
 a --> a2("@JsonProperty(value='xxx')") --- a21("Rename the key in outputed json")
 a --> a3("@JsonIgnore") --- a31("Skip content in outputed json")
-a --> a4("@JsonRootName('xxx')") --- a41("")
-
-
+a --> a4("@JsonRootName('xxx')") --- a41("wrap the outputed object in a root")
 ```
+
 
 
 
