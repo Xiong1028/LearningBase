@@ -7,6 +7,9 @@ Sling Models are "pure" POJOs which maps Sling objects (resources, request objec
  a[POJO Java Class] --> b[Sling API] --> |annotation model| c(Sling Model) --> |UseClass| HTL
 
 ```
+![sling model flow](/assets/img/aem/sling-model-request-flow.png){width=400}
+<p><sup>- image from <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-sling-model-exporter.html?lang=en" target="_blank">adobe</a></sup></p>
+
 
 ## Sling model in AEM
 ![sling model in AEM](/assets/img/aem/component-with-sling-model.png){width=800}
