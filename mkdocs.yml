@@ -37,6 +37,7 @@ nav:
       - Sites:
         - Introduction: adobe/aem/sites/index.md
         - Sandbox Setup: adobe/aem/sites/sandbox.md
+        - MSM Sites: adobe/aem/sites/msm-sites.md
         - Folder Structure: adobe/aem/sites/folder-structure.md
         - Package: adobe/aem/sites/package.md
         - Page: adobe/aem/sites/page.md
