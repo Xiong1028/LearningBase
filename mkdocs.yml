@@ -39,6 +39,7 @@ nav:
         - Sandbox Setup: adobe/aem/sites/sandbox.md
         - MSM Sites: adobe/aem/sites/msm-sites.md
         - Folder Structure: adobe/aem/sites/folder-structure.md
+        - OSGI Service: adobe/aem/sites/osgi-service.md
         - Package: adobe/aem/sites/package.md
         - Page: adobe/aem/sites/page.md
         - Template: adobe/aem/sites/template.md
