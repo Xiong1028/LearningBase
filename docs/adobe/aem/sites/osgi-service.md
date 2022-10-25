@@ -15,5 +15,52 @@
 
 <details>
 <summary>Demo</summary>
+```java
 
+@Component(service = GetTitleService.class, immediate = true)
+public class GetTitleServiceImpl implements GetTitleService {
+
+	private static final Logger LOG = LoggerFactory.getLogger(GetTitleServiceImpl.class);
+
+	private ResourceResolverFactory resourceResolverFactory;
+
+	//When Reference annotation is disallowed on fields, the solution is following
+	@Reference
+	public void bindResourceResolverFactory(ResourceResolverFactory resourceResolverFactory) {
+		this.resourceResolverFactory = resourceResolverFactory;
+	}
+
+	@Reference
+	public void unbindResourceResolverFactory(ResourceResolverFactory resourceResolverFactory) {
+		this.resourceResolverFactory = resourceResolverFactory;
+	}
+
+	@Override
+	public String getTitle() {
+		try {
+			//get ResourceResolver
+			@SuppressWarnings("deprecation")
+			ResourceResolver resourceResolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
+	   // get Resource
+			Resource resource = resourceResolver.getResource("/content/htlblog/author");
+
+			// get property  using adaptTo(), can also using getValueMap();
+			ValueMap valueMap = resource.adaptTo(ValueMap.class);
+			String title = valueMap.get("title", String.class);
+
+			return title;
+		} catch (Exception e) {
+			LOG.info("\n Login Exception {} ", e.getMessage());
+			return "error";
+		}
+	}
+}
+
+```
 </details>
+
+
+## Multiple Service Implementation
+![Multiple service](/assets/img/aem/multi-service-call.png){width=800}
+
+![Multiple service](/assets/img/aem/multi-service-call-2.png){width=800}
