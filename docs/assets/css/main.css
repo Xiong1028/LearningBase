@@ -1,53 +1,66 @@
-h1,h2,h3,h4,h5{
-	font-family: Georgia, 'Times New Roman', Times, serif !important;
-	font-weight: bold !important; 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-weight: bold !important;
 }
 
-
-h1{
-	color:#9A3324 !important;
-	font-size: 1.8rem !important;
+h1 {
+  color: #9a3324 !important;
+  font-size: 1.8rem !important;
 }
 
-h2{
-	color: darkblue !important;
-	font-size: 1.6rem !important;
+h2 {
+  color: darkblue !important;
+  font-size: 1.6rem !important;
 }
 
-h3{
-	color: #000 !important;
-	font-size: 1.4rem !important;
+h3 {
+  color: #000 !important;
+  font-size: 1.4rem !important;
 }
 
-h4{
-	color: purple !important;
-	font-size: 1.2rem !important;
+h4 {
+  color: purple !important;
+  font-size: 1.2rem !important;
 }
 
-em{
-	background-color: darkblue;
-	color: #FFCD00;
-	padding:0 0.5rem;
+em {
+  background-color: darkblue;
+  color: #ffcd00;
+  padding: 0 0.5rem;
 }
 
-.call-out-1{
-	padding: 1em;
-	border: 4px double #000;
-	background-color: lightgray;
-	font-family: monospace;
+.call-out-1 {
+  padding: 1em;
+  border: 4px double #000;
+  background-color: lightgray;
+  font-family: monospace;
 }
-
 
 .call-out-2,
-blockquote{
-	padding: 1em !important;
-	border-left: 4px solid orangered !important;
-	background-color: lightgray !important;
-	color: #000 !important;;
-	font-family: monospace !important;
+blockquote {
+  padding: 1em !important;
+  border-left: 4px solid orangered !important;
+  background-color: lightgray !important;
+  color: #000 !important;
+  font-family: monospace !important;
 }
 
-p:has(>sup){
-	font-style:italic;
-	font-size: 10px;
+p:has(> sup) {
+  font-style: italic;
+  font-size: 10px;
 }
+
+.toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  margin-bottom: 1em;
+  width: auto;
+  padding: 0.5em 2em;
+}
+

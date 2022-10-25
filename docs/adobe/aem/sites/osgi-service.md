@@ -1,13 +1,19 @@
 # OSGI Service
 
-*since 6.1, it allows developer or content authors to create system user from CRX explorer*
+> 
+- How to write OSGI serice and Service concepts.
+- How to call serice in Sling Model and other Services/Components
 
-Two API to get session
-```java
-Session session = SlingRepository.loginAdministrative();
+## Writing Service
 
-ResourceResolver rr = ResourceResolverFactory.getAdministrativeResourceResolver();
-```
+### Service Annotations
+![service annotation](/assets/img/aem/osgi-service-2.png){width=800}
 
-## Create and Map System User
-![create system user](/assets/img/aem/osgi-service-1.png){width=600}
+### How does a service work 
+![How does a service work](/assets/img/aem/osgi-service-3.png){width=800}
+
+
+<details>
+<summary>Demo</summary>
+
+</details>

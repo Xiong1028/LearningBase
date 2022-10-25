@@ -39,6 +39,7 @@ nav:
         - Sandbox Setup: adobe/aem/sites/sandbox.md
         - MSM Sites: adobe/aem/sites/msm-sites.md
         - Folder Structure: adobe/aem/sites/folder-structure.md
+        - Service User: adobe/aem/sites/service-user.md
         - OSGI Service: adobe/aem/sites/osgi-service.md
         - Package: adobe/aem/sites/package.md
         - Page: adobe/aem/sites/page.md
@@ -48,6 +49,7 @@ nav:
         - Dialog Validator: adobe/aem/sites/dialog-validator.md
         - Sling Model: adobe/aem/sites/sling-model.md
         - Sling Model Unit Test: adobe/aem/sites/model-unit-test.md
+        - AEM Log: adobe/aem/sites/aem-log.md
         - Content Exporter: adobe/aem/sites/content-exporter.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
