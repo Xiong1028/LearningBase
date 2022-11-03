@@ -41,6 +41,7 @@ nav:
         - Folder Structure: adobe/aem/sites/folder-structure.md
         - Service User: adobe/aem/sites/service-user.md
         - OSGI Service: adobe/aem/sites/osgi-service.md
+        - OSGI Configuration: adobe/aem/sites/osgi-config.md
         - Package: adobe/aem/sites/package.md
         - Page: adobe/aem/sites/page.md
         - Template: adobe/aem/sites/template.md
