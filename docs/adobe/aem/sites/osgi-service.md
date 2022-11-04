@@ -64,3 +64,48 @@ public class GetTitleServiceImpl implements GetTitleService {
 ![Multiple service](/assets/img/aem/multi-service-call.png){width=800}
 
 ![Multiple service](/assets/img/aem/multi-service-call-2.png){width=800}
+
+<details>
+<summary>demo</summary>
+```java
+//service
+@Component(service = MultiService.class,immediate = true,name = "serviceA")
+@ServiceRanking(1000)
+public class MultiServiceAImpl implements MultiService{
+    private static final Logger LOG= LoggerFactory.getLogger(MultiServiceAImpl.class);
+
+
+    @Override
+    public String getName() {
+        return "MultiServiceAImpl";
+    }
+}
+
+```
+```java
+//model 
+@Model(adaptables = SlingHttpServletRequest.class,
+adapters = ServiceDemo.class,
+defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+public class ServiceDemoImpl  implements ServiceDemo {
+		...
+    @OSGiService(filter = "(component.name=serviceA)")
+    MultiService multiService;
+
+    @OSGiService(filter = "(component.name=com.aem.geeks.core.services.impl.MultiServiceBImpl)")
+    MultiService multiServiceB;
+
+    @Override
+    public String getNameFromService() {
+        return multiService.getName();
+    }
+
+    @Override
+    public String getNameFromServiceB() {
+        return multiServiceB.getName();
+    }
+
+		...
+}
+```
+</details>
