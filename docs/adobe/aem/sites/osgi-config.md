@@ -266,7 +266,7 @@ a["Customized Run Models"] --> b1["prod"] & b2["stage"] & b3["QA"] & b4["local"]
 ![set run models in aem](/assets/img/aem/set-run-models.png){width=600}
 
 ### OSGI Configuration with Run Models
-![OSGI Configuration with Run Models](/assets/img/aem/osgi-configurations-with-different-run-modes.png){width=800}
+![OSGI Configuration with Run Models](/assets/img/aem/osgi-configurations-with-different-run-modes.png){width=600}
 
 ### Config Folders
 ![OSGI Configuration with Run Modes folder](/assets/img/aem/osgi-configurations-with-different-run-modes-folder.png){width=600}

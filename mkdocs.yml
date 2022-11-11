@@ -40,6 +40,7 @@ nav:
         - MSM Sites: adobe/aem/sites/msm-sites.md
         - Folder Structure: adobe/aem/sites/folder-structure.md
         - Service User: adobe/aem/sites/service-user.md
+        - Sling servlet: adobe/aem/sites/sling-servlet.md
         - OSGI Service: adobe/aem/sites/osgi-service.md
         - OSGI Configuration: adobe/aem/sites/osgi-config.md
         - Package: adobe/aem/sites/package.md
