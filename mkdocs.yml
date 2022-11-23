@@ -41,6 +41,8 @@ nav:
         - Folder Structure: adobe/aem/sites/folder-structure.md
         - Service User: adobe/aem/sites/service-user.md
         - Sling servlet: adobe/aem/sites/sling-servlet.md
+        - Query Builder: adobe/aem/sites/query-builder.md
+        - Sling scheduler: adobe/aem/sites/sling-scheduler.md
         - OSGI Service: adobe/aem/sites/osgi-service.md
         - OSGI Configuration: adobe/aem/sites/osgi-config.md
         - Package: adobe/aem/sites/package.md
@@ -68,6 +70,7 @@ nav:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -76,4 +79,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
 copyright: copyright@ 2022 xiong, All right reserved

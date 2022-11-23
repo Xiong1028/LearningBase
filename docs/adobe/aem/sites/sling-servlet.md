@@ -37,27 +37,101 @@ a2 --> a21["Read Operation/Get"] & a22["Write Operation/Post"]
 ```
 
 ### Sevlet with OSGI DS 1.2 Demo
-![sling servlet](/assets/img/aem/sling-servlet-1.png){width=600}
+![sling servlet](/assets/img/aem/sling-servlet-1.png)
 
 <details>
 <summary>Sevlet with OSGI DS 1.2 Demo</summary>
 ```java
+@Component(
+        service= {Servlet.class},
+        property={
+                "sling.servlet.methods="+ HttpConstants.METHOD_GET,
+                SLING_SERVLET_METHODS+"="+HttpConstants.METHOD_POST,
+                "sling.servlet.resourceTypes="+ "aemgeeks/components/structure/geeks-home",
+                SLING_SERVLET_PATHS+"="+"/geeks/r5servlet",
+                "sling.servlet.selectors=" + "geeks",
+                "sling.servlet.selectors=" + "ds",
+                SLING_SERVLET_EXTENSIONS+"="+"xml",
+                "sling.servlet.extensions"+"="+"txt"
+        })
+public class GeeksServlet extends SlingAllMethodsServlet {
+    @Override
+    protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp) throws ServletException, IOException {
+          ... 
+    }
 
-
+    @Override
+    protected void doPost(SlingHttpServletRequest req, SlingHttpServletResponse resp)
+          ... 
+    }
+}
 ```
 </details>
 
 
 ### Sevlet with OSGI DS 1.4 Demo
-![sling servlet ds1.4](/assets/img/aem/sling-servlet-2.png){width=600}
+![sling servlet ds1.4](/assets/img/aem/sling-servlet-2.png)
 
 <details>
 <summary>Sevlet with OSGI DS 1.4 Demo</summary>
 ```java
+//Servlet By resourceType 
+@Component(service = Servlet.class)
+@SlingServletResourceTypes(
+        methods = {HttpConstants.METHOD_GET,HttpConstants.METHOD_POST},
+        resourceTypes = "aemgeeks/components/structure/page",
+        selectors = {"geeks","test"},
+        extensions = {"txt","xml"}
+)
+public class GeeksResourceTypesServlet extends SlingAllMethodsServlet {
 
+    @Override
+    protected void doGet(final SlingHttpServletRequest req,
+                         final SlingHttpServletResponse resp) throws ServletException, IOException {
+												 ...
+    }
+    @Override
+    protected void doPost(SlingHttpServletRequest req, SlingHttpServletResponse resp)
+            throws ServletException, IOException {
+						 ...
+		}
+}
+```
+```java
+//Servlet By Paths
+@Component(service = Servlet.class)
+@SlingServletPaths(
+        value = {"/bin/pages","/geeks/pages"}
+)
+public class GeeksPathTypeServlet extends SlingAllMethodsServlet {
 
+    @Override
+    protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp) throws ServletException, IOException {
+        ...    
+    }
+
+    @Override
+    protected void doPost(SlingHttpServletRequest req, SlingHttpServletResponse resp)
+            throws ServletException, IOException {
+        ...
+    }
+}
 ```
 </details>
 
 #### ResourceType Sling Servlet Demo
-![ResourceType Sling Servlet Demo](/assets/img/aem/sling-servlet-3.png){width=600}
+![ResourceType Sling Servlet Demo](/assets/img/aem/sling-servlet-3.png)
+
+
+#### Sling Servlet By ResourceType
+> Note: The selectors and extensions must be used in servlets defined by resourceTypes if they are defined.
+ 
+![ResourceType Sling Servlet in AEM](/assets/img/aem/resourceTypeServlet.png)
+
+
+#### Sling Servlet By Paths
+> Note: The path should be defined in `apache sling servlet/script resolver and error handler` of Sling Configuration.
+> The selectors and extensions are not required in servlets defined by paths.
+
+![Define path in Configuration](/assets/img/aem/servletByPath.png)
+
