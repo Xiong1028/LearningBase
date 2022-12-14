@@ -52,6 +52,7 @@ nav:
         - Dialog: adobe/aem/sites/dialog.md
         - Dialog Validator: adobe/aem/sites/dialog-validator.md
         - Sling Model: adobe/aem/sites/sling-model.md
+        - Event Handling: adobe/aem/sites/event-handling.md
         - Sling Model Unit Test: adobe/aem/sites/model-unit-test.md
         - AEM Log: adobe/aem/sites/aem-log.md
         - Content Exporter: adobe/aem/sites/content-exporter.md
