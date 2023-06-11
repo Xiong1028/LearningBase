@@ -37,11 +37,25 @@ nav:
       - Sites:
         - Introduction: adobe/aem/sites/index.md
         - Sandbox Setup: adobe/aem/sites/sandbox.md
+        - MSM Sites: adobe/aem/sites/msm-sites.md
         - Folder Structure: adobe/aem/sites/folder-structure.md
+        - Service User: adobe/aem/sites/service-user.md
+        - Sling servlet: adobe/aem/sites/sling-servlet.md
+        - Query Builder: adobe/aem/sites/query-builder.md
+        - Sling scheduler: adobe/aem/sites/sling-scheduler.md
+        - OSGI Service: adobe/aem/sites/osgi-service.md
+        - OSGI Configuration: adobe/aem/sites/osgi-config.md
         - Package: adobe/aem/sites/package.md
         - Page: adobe/aem/sites/page.md
         - Template: adobe/aem/sites/template.md
         - Components: adobe/aem/sites/components.md
+        - Dialog: adobe/aem/sites/dialog.md
+        - Dialog Validator: adobe/aem/sites/dialog-validator.md
+        - Sling Model: adobe/aem/sites/sling-model.md
+        - Event Handling: adobe/aem/sites/event-handling.md
+        - Sling Model Unit Test: adobe/aem/sites/model-unit-test.md
+        - AEM Log: adobe/aem/sites/aem-log.md
+        - Content Exporter: adobe/aem/sites/content-exporter.md
         - BEM: adobe/aem/sites/bem.md
         - URL Decomposition: adobe/aem/sites/aemurl.md
         - HTL: adobe/aem/sites/htl.md
@@ -57,9 +71,15 @@ nav:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
 copyright: copyright@ 2022 xiong, All right reserved

@@ -22,6 +22,8 @@
 │		└──templates 
 |──content
 ```
+![crx structure](/assets/img/aem/crx-structure.png){width=300}
+<p><sup>- image from <a href="https://www.youtube.com/c/AEMGeeks" target="_blank">AEM GEEKS</a></sup></p>
 
 ## Create website sturcture  in AEM
 
